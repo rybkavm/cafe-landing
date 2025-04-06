@@ -1,0 +1,42 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  background-color: #809bce;
+  padding: 25px 50px;
+  font-size: 18px;
+
+}
+
+.header__menu {
+
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32.5px;
+  list-style-type: circle;
+}
+
+.header__links-list-item {
+
+}
+
+.header__link {
+
+}
+
+.header__logo {
+  display: block;
+  width: 120px;
+  height: 100px;
+}
+
+.address {
+  justify-self: end;
+}
+
+.contact-information,
+.header__link-active {
+  text-decoration: none;
+}
