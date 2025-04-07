@@ -8,86 +8,45 @@
   border: 1px solid black;
 }
 
-.header__menu {
-
-}
-
 .header__links-list {
   display: flex;
   gap: 32.5px;
   list-style-type: circle;
 }
 
-.header__links-list-item {
-
-}
-
-.header__link {
-
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   border: 1px solid black;
+  height: 100%;
+}
+
+.card__li-button {
   width: 100%;
-  height: 750px;
-  padding: 25px;
-
-  grid-template-areas:
-  "card__button_up card_espresso"
-  "card__americano card__cappuccino"
-  "card__latte card__raf"
-  "card__mockachino card__button_down";
-}
-
-.card__button_up {
-  grid-area: card__button_up;
-}
-
-.card_espresso {
-  grid-area: card_espresso;
-}
-
-.card__americano {
-  grid-area: card__americano;
-}
-
-.card__cappuccino {
-  grid-area: card__cappuccino;
-}
-
-.card__latte {
-  grid-area: card__latte;
-}
-
-.card__raf {
-  grid-area: card__raf;
-}
-
-.card__mockachino {
-  grid-area: card__mockachino;
-}
-
-.card__button_down {
-  grid-area: card__button_down;
-}
-
-.button__background-color {
+  height: 375px;
   background-color: #d6eadf;
 }
 
-.main__background-color {
-  background-color: #95b8d1;
+.card:nth-child(3),
+.card:nth-child(5),
+.card:nth-child(7) {
+  transform: translatey(-375px);
 }
 
-.card__background-color {
+.card_drinks {
+  height: 750px;
   background-color: #b8e0d2;
 }
 
 .main {
-
+  background-color: #95b8d1;
 }
 
 .images__card {
