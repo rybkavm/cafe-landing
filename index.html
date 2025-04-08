@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Кофейня в Краснодаре - лучший кофе в городе. Забронируйте столик онлайн.">
     <title>Кофе, которого заслуживает весь мир</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
@@ -25,7 +26,7 @@
         </ul>
       </nav>
       <a class="header__logo">
-        <img src="./images/logo.svg" alt="логотип в черном цвете: кофе" />
+        <img src="./images/logo.svg" alt="логотип" loading="lazy" />
       </a>
       <address class="header__address">
         <p>
@@ -38,68 +39,80 @@
       </address>
     </header>
     <main class="main">
-      <section>
+      <section class="card__section" id="drinks">
+        <h2 class="section-title">Наши напитки</h2>
         <ul class="card__grid">
           <li class="card card__li-button">
             <article class="card__button">
-              <h2></h2>
-              <span></span>
-              <button>Забронировать стол</button>
+              <h2>Рады Вас приветсвовать на нашем сайте</h2>
+              <span>здесь вы можете забронировать столик</span>
+              <button>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Забронировать стол
+              </button>
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Эспрессо</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-1-espresso.jpg" alt="эспрессо" />
+            <article class="card__drinks" style="background-image: url('./images/card-1-espresso.jpg')">
+              <div class="card__content">
+                <h2>Эспрессо</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+              </div>
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Американо</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-2-americano.jpg" alt="американо" />
+            <article class="card__drinks" style="background-image: url('./images/card-2-americano.jpg')">
+              <div class="card__content">
+                <h2>Американо</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+              </div>  
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Капучино</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-3-cappuccino.jpg" alt="капучино" />
+            <article class="card__drinks" style="background-image: url('./images/card-3-cappuccino.jpg')">
+              <div class="card__content">
+                <h2>Капучино</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+              </div>
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Латте</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-4-latte.jpg" alt="латте" />
+            <article class="card__drinks" style="background-image: url('./images/card-4-latte.jpg')">
+              <div class="card__content">
+                <h2>Латте</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+            </div>
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Раф</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-5-raf.jpg" alt="раф" />
+            <article class="card__drinks" style="background-image: url('./images/card-5-raf.jpg')">
+              <div class="card__content">
+                <h2>Раф</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+              </div>
             </article>
           </li>
           <li class="card">
-            <article class="card_drinks">
-              <h2>Моккачино</h2>
-              <h3>Цена</h3>
-              <span>Описание</span>
-              <img class="images__card" src="./images/card-6-mockachino.jpg" alt="моккачино" />
+            <article class="card__drinks" style="background-image: url('./images/card-6-mockachino.jpg')">
+              <div class="card__content">
+                <h2>Моккачино</h2>
+                <h3>Цена</h3>
+                <span>Описание</span>
+              </div>
             </article>
           </li>
           <li class="card card__li-button">
             <article class="card__button">
-              <h2></h2>
-              <span></span>
-              <button>Забронировать стол</button>
+              <h2>Было приятно видеть Вас</h2>
+              <span>напоминаем про возможность забронировать стол</span>
+              <button>ТЫК СЮДА</button>
             </article>
           </li>
         </ul>
@@ -120,7 +133,7 @@
       </address>
 
       <a class="footer__logo">
-        <img src="./images/logo.svg" alt="логотип в черном цвете: кофе" />
+        <img src="./images/logo.svg" alt="логотип" loading="lazy" />
       </a>
 
       <!-- не забыть добавить target https://htmlbook.ru/html/a/target -->
@@ -143,5 +156,16 @@
         </li>
       </ul>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+          // Добавляем небольшую задержку для анимации
+          setTimeout(() => {
+            card.classList.add('visible');
+          }, 100 * index);
+        });
+      });
+    </script>
   </body>
 </html>
