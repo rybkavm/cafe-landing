@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .section-bg {
+        will-change: transform;
+      }
+    </style>
   </head>
   <body>
     <header class="header" id="header">
@@ -40,18 +45,21 @@
     </header>
     <main class="main">
       <section class="card__section" id="drinks">
+        <div class="section-bg"></div>
         <h2 class="section-title">Наши напитки</h2>
         <ul class="card__grid">
           <li class="card card__li-button">
-            <article class="card__button">
-              <h2>Рады Вас приветсвовать на нашем сайте</h2>
-              <span>здесь вы можете забронировать столик</span>
-              <button>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                Забронировать стол
-              </button>
+            <article class="card__button" style="background-image: url('./images/button_top.jpg')">
+              <div class="card__button-content">
+                <h2>Рады Вас приветсвовать на нашем сайте</h2>
+                <span>здесь вы можете забронировать столик</span>
+                <button>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  Забронировать стол
+                </button>
+              </div>
             </article>
           </li>
           <li class="card">
@@ -109,18 +117,17 @@
             </article>
           </li>
           <li class="card card__li-button">
-            <article class="card__button">
-              <h2>Было приятно видеть Вас</h2>
-              <span>напоминаем про возможность забронировать стол</span>
-              <button>ТЫК СЮДА</button>
+            <article class="card__button" style="background-image: url('./images/button_down.jpg')">
+              <div class="card__button-content">
+                <h2>Было приятно видеть Вас</h2>
+                <span>напоминаем про возможность забронировать стол</span>
+                <button>ТЫК СЮДА</button>
+              </div>
             </article>
           </li>
         </ul>
       </section>
     </main>
-    
-    
-    
     <footer class="footer">
       <address class="footer__address">
         <p>
@@ -131,13 +138,9 @@
         </p>
         <p class="contact-information">ул. Красная, д. 98, <br>Краснодар</p>
       </address>
-
       <a class="footer__logo">
         <img src="./images/logo.svg" alt="логотип" loading="lazy" />
       </a>
-
-      <!-- не забыть добавить target https://htmlbook.ru/html/a/target -->
-
       <ul class="footer__social-list footer__social-list-position" id="social">
         <li class="footer__social-list-item">
           <a class="footer__social-link" href="#0" target="_blank">
